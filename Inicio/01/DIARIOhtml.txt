@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <style>
+  body{
+    background: #f5fffc;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  header{
+    width: 100%;
+    height: fit-content;
+    padding: 4vw 0 4vw 0;
+    background: #F4363C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 2vw;
+    border:0.5vw solid black;
+    background: white;
+  }
+  .info{
+    width:80%;
+    justify-self: center;
+    align-self: center;
+    margin-top: 20%;
+  }
+  .atajos{
+    width:100%;
+    height:fit-content;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    background:#2D2C34;
+    color: #f5fffc;
+    text-align: center;
+    column-gap: 1vw;
+  }
+  .atajos p{
+    width: 100%;
+    font-size: 3vw;
+    border-left: 1px solid #f5fffc;
+  }
+  .info .titulo{
+    width:100%;
+    padding: 1vw 0 1vw 0;
+    border-bottom: 2px solid black;
+    font-weight: 800;
+  }
+  .info img{
+    width: 100%;
+    height: auto;
+    border-radius: 2vw;
+  }
+  .info .descrip{
+    font-size: 3vw;
+    opacity: 0.8;
+  }
+  .otras{
+    margin-top: 20vw;
+    width:90%;
+    justify-self: center;
+    text-align: center;
+    padding-bottom: 4vw;
+    border-bottom: 2px solid black;
+  }
+  .noticias{
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4vw;
+  }
+  .noticia img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 2vw;
+  }
+  .noticia .descrip{
+    margin-bottom: 4vw;
+  }
+  footer{
+    margin-top: 10vw;
+    width: 100%;
+    height fit-content;
+    padding: 5vw 0 5vw 0;
+    background: #2D2C34;
+    display: grid;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    color: #f5fffc;
+  }
+  footer .redes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3vw;
+  }
+  footer .redes .red{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 2vw;
+  }
+  /* Aplico el responsive, especificando el mínimo de tamaño en la pantalla para que se me modifique*/
+  @media (min-width: 800px){
+    h1{font-size: 5vw;}
+    p{font-size: 4vw;}
+  }
+  </style>
+</head>
+<body>
+  <!-- Hago un header con un logo y un nombre -->
+  <header>
+    <img src="https://png.pngtree.com/png-vector/20240202/ourmid/pngtree-3d-illustration-clarinet-object-png-image_11591576.png" class="logo"></img>
+    <h1 class="nombre">
+      ElClarón
+    </h1>
+  </header>
+  <div class="atajos">
+    <p>Deportes</p>
+    <p>Cosas</p>
+    <p>Más cosas</p>
+    <p>Más deportes</p>
+  </div>
+  <!-- Defino una clase que engloba toda una noticia y repito la misma estructura varias veces -->
+  <div class="info">
+    <h1 class="titulo">Notición</h1>
+    <p class="detalle">Lorem Ipsum</p>
+    <img src="https://m.media-amazon.com/images/S/pv-target-images/db3e5296e42861d8b2d7626a2a9ab9d3ce21848cc4ebe9f92cfd621837755c9d.jpg"></img>
+    <p class="descrip">Dragon Ball</p>
+    <p class="fecha">hoy/hoy/este año</p>
+  </div>
+    <div class="info">
+    <h1 class="titulo">Notición</h1>
+    <p class="detalle">Lorem Ipsum</p>
+    <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2022/08/02/ae5252d1-b79b-4950-9e34-6e67fac09bb0/LeoMessi20092010_pic_fcb-arsenal62.jpg"></img>
+    <p class="descrip">El mejor del mundo</p>
+    <p class="fecha">hoy/hoy/este año</p>
+  </div>
+    <div class="info">
+    <h1 class="titulo">Notición</h1>
+    <p class="detalle">Lorem Ipsum</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7OOVEsL1bzTuB4MJfCc8BCCqSBGoOTQVmVQ&s"></img>
+    <p class="descrip">Kentucky Fried Chicken</p>
+    <p class="fecha">hoy/hoy/este año</p>
+  </div>
+  <!-- Hago un grid con un otras noticias -->
+  <h1 class="otras">Otras noticias</h1>
+  <div class="noticias">
+    <div class="noticia">
+       <img src="https://m.media-amazon.com/images/S/pv-target-images/db3e5296e42861d8b2d7626a2a9ab9d3ce21848cc4ebe9f92cfd621837755c9d.jpg"></img>
+      <p class="descrip">info</p>
+    </div>
+    <div class="noticia">
+       <img src="https://m.media-amazon.com/images/S/pv-target-images/db3e5296e42861d8b2d7626a2a9ab9d3ce21848cc4ebe9f92cfd621837755c9d.jpg"></img>
+      <p class="descrip">info</p>
+    </div>
+    <div class="noticia">
+       <img src="https://m.media-amazon.com/images/S/pv-target-images/db3e5296e42861d8b2d7626a2a9ab9d3ce21848cc4ebe9f92cfd621837755c9d.jpg"></img>
+      <p class="descrip">info</p>
+    </div>
+  </div>
+  <!-- Hago un footer con las redes sociales de la página -->
+  <footer>
+    <h1 class="nombre">ElClarón</h1>
+    <p class="sociales">Redes Sociales</p>
+       <div class="redes">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" class="red"></img>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/480px-Facebook_Logo_%282019%29.png" class="red"></img>
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/016/716/480/small_2x/whatsapp-icon-free-png.png" class="red"></img>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>
