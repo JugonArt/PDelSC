@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>ejercicio6</title>
+</head>
+<body>
+
+  <h1>Formulario de Registro</h1>
+
+  <form action="/registrar" method="POST">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Edad:</label>
+    <input type="number" name="edad" required>
+
+    <label id="genero">Género:</label>
+    Masculino <input type="radio" name="genero" value="Masculino" required> 
+    Femenino <input type="radio" name="genero" value="Femenino"> 
+
+    <label>País:</label>
+    <select name="pais" required>
+      <option value="Argentina">Argentina</option>
+      <option value="México">México</option>
+      <option value="España">España</option>
+    </select>
+
+    <label>
+      ¿Deseás suscribirte al boletín? <input type="checkbox" name="suscripcion">
+    </label>
+
+    <button type="submit">Registrarse</button>
+  </form>
+
+</body>
+</html>

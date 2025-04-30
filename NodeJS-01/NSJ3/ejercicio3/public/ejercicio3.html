@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio3</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+ 
+        }
+        button{
+            width: 1fr;
+            height: 3vw;
+            transition: all 0.3s ease-in-out;
+            border-radius: 2vh;
+        }
+        .contenedor{
+            margin-top: 4vw;
+            justify-self: center;
+            width: 50vw;
+            padding: 2vw;
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            gap: 2vw;
+        }
+        #boton2 {
+            box-shadow: inset -2px -2px 5px rgba(0,0,0,0.4);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #resultado{
+            text-align: center;
+            font-size: 1.5vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor" id="contenedor">
+    <button id="boton1">Hover verde</button>
+    <button id="boton2">Botón 3D</button>
+    <button id="boton3">Selección roja</button>
+    <button id="boton4">Doble clic</button>
+    <button id="boton5">Clic derecho</button>
+<button id="verCantidad">Ver cuántos hijos tiene</button>
+<p id="resultado"> </p>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

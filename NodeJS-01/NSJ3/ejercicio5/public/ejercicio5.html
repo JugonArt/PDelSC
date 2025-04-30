@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio5</title>
+    <style>
+        html{
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        #contenedor {
+            border: 2px dashed #999;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .container{
+            justify-self: center;
+            align-self: center;
+            width: 95vw;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1vw;
+        }
+        button {
+            width: 1fr;
+            height: fit-content;
+            padding: 1vw;
+            border: 1px solid rgb(51, 46, 71);
+            background: rgb(158, 158, 241);
+            font-size: 1.2vw;
+            text-align: center;
+            border-radius: 2vh;        
+        }
+        #contenedor .link, p{
+            font-size: 2vw;
+            text-align: center;
+            justify-self: center;
+            align-self: center;
+            width: 100vw;
+            border: 1px solid red;
+            text-decoration: none;
+        }
+        #contenedor{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: scroll;
+        }
+        #contenedor img{
+            width: 20vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <button onclick="agregarParrafo()">Agregar Párrafo</button>
+    <button onclick="agregarImagen()">Agregar Imagen</button>
+    <button onclick="agregarEnlace()">Agregar Enlace</button>
+    <button onclick="limpiar()">Limpiar</button>
+    </div>  
+    <div id="contenedor">
+    </div>
+
+    <script>
+        function agregarParrafo() {
+            document.getElementById("contenedor").innerHTML += "<p>Fucking Goku</p>";
+        }
+
+        function agregarImagen() {
+            document.getElementById("contenedor").innerHTML += "<img src='https://i.pinimg.com/736x/9c/54/ee/9c54eee45ed987261a1fe725d7695557.jpg' alt='Imagen' />";
+        }
+
+        function agregarEnlace() {
+            document.getElementById("contenedor").innerHTML += "<a href='https://youtube.com' target='_blank' class='link'>Ir a Youtube</a>";
+        }
+
+        function limpiar() {
+            document.getElementById("contenedor").innerHTML = "";
+        }
+    </script>
+
+</body>
+</html>

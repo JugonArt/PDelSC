@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .textoin::before{
+            content: '';
+        }
+        .textoin::after{
+            content: 'Fucking Goku';
+        }
+        .textochange::after{
+            content: 'Fucking Vegeta';
+        }
+        .red{
+            color: red;
+        }
+        .black{
+            color: black;
+        }
+        .imagen{
+            transition: 0.8s ease-in-out;
+        }
+        .grande{
+            width: 20vw;
+            height: auto;
+        }
+        .chico{
+            width: 10vw;
+            height: auto;
+        }
+        .container{
+            width: 100vw;
+            height: 50vw;
+            padding: 2vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .izq{
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            gap: 0vw;
+        }
+        .izq button{
+            width: 100%;
+            height: fit-content;
+            padding: 1vw;
+            border: 1px solid rgb(248, 199, 199);
+            background: rgb(103, 103, 221);
+            font-size: 1.5vw;
+            text-align: center;
+            border-radius: 2vh;
+        }
+        .der{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .der .contenedor{
+            width: 100%;
+            font-size: 2vw;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="izq">
+    <button onclick="Agrega()" id="button1">Agregar componente</button>
+    <button onclick="Cambia()">Cambiar componente</button>
+    <button onclick="Color()">Cambiar color</button>
+    <button onclick="Imagen()" id="button2">Agregar imagen</button>
+    <button onclick="CambiarImagen()">Cambiar imagen</button>
+    <button onclick="CambiaTamano()">Cambiar tamaño de imagen</button>
+</div>
+<div class="der">
+    <p class="contenedor" id="contenedor"></p>
+    <div class="imagen" id="imagen"></div>
+</div>
+</div>
+    <script src="javascriptejercicio1.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    width: 100vw;
+    display: grid;
+    padding: 4vw 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(13, 13, 14);
+    color: #ccc;
+  }
+  form {
+    border: 1px solid #cccccc70;
+    padding: 20px;
+    border-radius: 2vh;
+    width: 30vw;
+    height: 25vw;
+    background: rgb(34, 31, 37);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  input, select {
+    margin-bottom: 10px;
+    border-radius: 3vh;
+    display: block;
+    background: transparent;
+    border: 1px solid #cccccc70;
+    color: #ccc;
+    text-align: center;
+    justify-self: center;
+    width: 25vw;
+  }
+  label{
+    width: 25vw;
+  }
+  #genero{
+    border-bottom: 1px solid #cccccc70;
+    margin-top: 10px;
+  }
+  .container{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+  }
+  a{
+    width: 20vw;
+    border: 1px solid #cccccc70;
+    border-radius: 2vh;
+    font-size: 1.5vw;
+    padding: 0.5vw 0 0.5vw 0;
+    color: #ccc;
+    text-decoration: none;
+  }
