@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio1</title>
+</head>
+<body>
+    <form id="signupForm">
+        <div class="segment">
+          <h1>Registrate</h1>
+        </div>
+        
+        <label>
+          <input type="text" placeholder="Nombre" name="usr" required />
+        </label>
+        <label>
+          <input type="text" placeholder="Apellido" name="lastName" required />
+        </label>
+        <label>
+            <input type="email" placeholder="Email" name="email" required />
+        </label>
+        <label>
+            <input type="password" placeholder="Password" name="pass" required />
+        </label>
+        <button class="red" type="submit" id="submitBtn"><i class="icon ion-md-lock"></i>Enviar</button>
+    </form>
+
+    <h2>Personas Registradas:</h2>
+    <div id="personas-list">
+        <!-- Aquí se irán mostrando las personas cargadas -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

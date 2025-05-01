@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+</head>
+<body>
+    <form id="signupForm">
+        <div class="segment">
+          <h1>Registrate</h1>
+        </div>
+        <div class="contenedor">
+          <div class="sector1">
+        <label>
+          <input type="text" placeholder="Nombre" name="usr" required />
+        </label>
+        <label>
+          <input type="text" placeholder="Apellido" name="lastName" required />
+        </label>
+        <label>
+          <input type="number" placeholder="Edad" name="age" min="1" max="150" required />
+        </label>
+        <label>
+          <input type="date" class="fecha" placeholder="Fecha de nacimiento" name="birthday" required />
+        </label>
+          <fieldset>
+          <legend> Sexo</legend>
+          <div class="contenersexo">
+            <div class="sexo-opcion">
+              <label for="Masculino">Masculino</label>
+          <input type="radio" class="radio"  name="gender" value="Masculino" required />
+          </div>
+          <div class="sexo-opcion">
+            <label for="Femenino">Femenino</label>
+          <input type="radio" class="radio" name="gender" value="Femenino"  required />
+          </div>
+          </div>
+        </fieldset>
+        <label>
+          <input type="number" placeholder="Documento" name="document" required minlength="8" maxlength="8"
+          oninput="this.value = this.value.slice(0, 8)"
+          pattern="\d{8}" />
+        </label>
+        <fieldset>
+          <legend> Estado Civil</legend>
+          <div class="contenersexo">
+            <div class="sexo-opcion">
+              <label for="Soltero">Soltero</label>
+          <input type="radio" class="radio"  name="civil" value="Soltero" required />
+          </div>
+          <div class="sexo-opcion">
+            <label for="Casado">Casado</label>
+          <input type="radio" class="radio" name="civil" value="Casado"  required />
+          </div>
+          </div>
+        </fieldset>
+      </div>
+        <div class="sector2">
+        <label>
+          <select name="country" required class="nacionalidad">
+            <option value="" disabled selected>Nacionalidad</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Perú">Perú</option>
+            <option value="Bolivia">Bolivia</option>
+          </select>
+        </label>
+        <div class="phone-group">
+          <select name="countryCode"class="country-code" id="countryCode">
+            <option value="+54">🇦🇷 +54 (Argentina)</option>
+            <option value="+51">🇵🇪 +51 (Perú)</option>
+            <option value="+591">🇧🇴 +591 (Bolivia)</option>
+          </select>
+        
+          <input type="text" name="phone" class="phone-input" placeholder="Teléfono" id="phoneNumber" required />
+        </div>
+        <label>
+            <input type="email" placeholder="Email" name="email" required />
+        </label>
+        <fieldset>
+          <legend>¿Tiene hijos?</legend>
+          <div class="hijos-container">
+            <label>
+              <input type="radio" name="tieneHijos" value="si" class="radio" onchange="mostrarCantidad(true)" required />
+              Sí
+            </label>
+            <label>
+              <input type="radio" name="tieneHijos" value="no" class="radio" onchange="mostrarCantidad(false)" />
+              No
+            </label>
+          </div>
+        
+          <div id="cantidadHijos" class="hijos-cantidad">
+            <label>
+              ¿Cuántos?
+              <input type="number" class="hijos-numero" name="cantidadHijos" class="form-input" min="1" max="20" />
+            </label>
+          </div>
+        </fieldset>
+        <button class="red" type="submit" id="submitBtn"><i class="icon ion-md-lock"></i>Enviar</button>
+    </form>
+  </div>
+</div>
+    <h2>Personas Registradas:</h2>
+    <div id="personas-list">
+        <!-- Aquí se irán mostrando las personas cargadas -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
