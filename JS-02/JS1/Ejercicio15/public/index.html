@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="izq"></div>
+ <div class="grid">
+      <h2>Lista de Textos</h2>
+
+      <!-- Formulario adaptado -->
+      <form id="formularioFrutas" onsubmit="return false;">
+        <input type="text" id="nuevaFruta" placeholder="Escribe texto con ( ... )" style="width: 100%;" />
+        <button type="button" onclick="agregarFruta()">Agregar Texto</button>
+        <br><br>
+        <label for="frutas">Textos guardados:</label><br>
+        <textarea id="frutas" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+    <div class="der"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
