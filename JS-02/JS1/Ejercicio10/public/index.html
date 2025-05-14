@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 1. Números x3 -->
+    <div class="grid">
+        <h2>Números x3</h2>
+        <form id="formNums" onsubmit="return false;">
+          <input type="number" id="nuevoNum" placeholder="Ingresa un número" />
+          <button type="button" onclick="agregarNum()">Agregar Número</button>
+          <button type="button" onclick="mapMultiplicar()">Multiplicar por 3</button>
+          <br><br>
+          <label for="nums">Números:</label><br>
+          <textarea id="nums" rows="3" readonly></textarea>
+          <label for="numsMap">Resultado x3:</label><br>
+          <textarea id="numsMap" rows="3" readonly></textarea>
+        </form>
+      </div>
+  
+      <!-- 2. Nombres mayúsculas -->
+      <div class="grid">
+        <h2>Nombres Mayúsculas</h2>
+        <form id="formNoms" onsubmit="return false;">
+          <input type="text" id="nuevoNom" placeholder="Ingresa nombre" />
+          <button type="button" onclick="agregarNom()">Agregar Nombre</button>
+          <button type="button" onclick="mapMayusculas()">Convertir Mayúsculas</button>
+          <br><br>
+          <label for="noms">Nombres:</label><br>
+          <textarea id="noms" rows="3" readonly></textarea>
+          <label for="nomsMap">Mayúsculas:</label><br>
+          <textarea id="nomsMap" rows="3" readonly></textarea>
+        </form>
+      </div>
+  
+      <!-- 3. Precios con IVA 21% -->
+      <div class="grid">
+        <h2>Precios + 21% IVA</h2>
+        <form id="formPrecios" onsubmit="return false;">
+          <input type="number" id="nuevoPrecio" placeholder="Ingresa precio" />
+          <button type="button" onclick="agregarPrecio()">Agregar Precio</button>
+          <button type="button" onclick="mapIVA()">Aplicar IVA</button>
+          <br><br>
+          <label for="precios">Precios:</label><br>
+          <textarea id="precios" rows="3" readonly></textarea>
+          <label for="preciosMap">Con IVA 21%:</label><br>
+          <textarea id="preciosMap" rows="3" readonly></textarea>
+        </form>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

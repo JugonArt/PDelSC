@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- 1. Edades: Copia los primeros 3 -->
+    <div class="grid">
+      <h2>Edades (Primeros 3)</h2>
+      <form id="formEdades" onsubmit="return false;">
+        <input type="number" id="nuevaEdad" placeholder="Ingresa una edad" />
+        <button type="button" onclick="agregarEdad()">Agregar Edad</button>
+        <button type="button" onclick="copiarEdades()">Copiar Primeros 3</button>
+        <br><br>
+        <label for="edades">Todas las Edades:</label><br>
+        <textarea id="edades" rows="3" readonly></textarea><br>
+        <label for="edadesCopiadas">Edades Copiadas:</label><br>
+        <textarea id="edadesCopiadas" rows="2" readonly></textarea>
+      </form>
+    </div>
+
+    <!-- 2. Películas: Posición 2 a 4 -->
+    <div class="grid">
+      <h2>Películas (2 a 4)</h2>
+      <form id="formPeliculas" onsubmit="return false;">
+        <input type="text" id="nuevaPelicula" placeholder="Nombre de película" />
+        <button type="button" onclick="agregarPelicula()">Agregar Película</button>
+        <button type="button" onclick="copiarPeliculas()">Copiar de 2 a 4</button>
+        <br><br>
+        <label for="peliculas">Películas:</label><br>
+        <textarea id="peliculas" rows="3" readonly></textarea><br>
+        <label for="peliculasCopiadas">Películas Copiadas:</label><br>
+        <textarea id="peliculasCopiadas" rows="2" readonly></textarea>
+      </form>
+    </div>
+
+    <!-- 3. Ciudades: Últimos 3 -->
+    <div class="grid">
+      <h2>Ciudades (Últimos 3)</h2>
+      <form id="formCiudades" onsubmit="return false;">
+        <input type="text" id="nuevaCiudad" placeholder="Nombre de ciudad" />
+        <button type="button" onclick="agregarCiudad()">Agregar Ciudad</button>
+        <button type="button" onclick="copiarUltimasCiudades()">Copiar Últimos 3</button>
+        <br><br>
+        <label for="ciudades">Ciudades:</label><br>
+        <textarea id="ciudades" rows="3" readonly></textarea><br>
+        <label for="ciudadesCopiadas">Últimas 3 Ciudades:</label><br>
+        <textarea id="ciudadesCopiadas" rows="2" readonly></textarea>
+      </form>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

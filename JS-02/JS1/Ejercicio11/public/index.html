@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+<!-- 1. Números > 10 -->
+<div class="grid">
+    <h2>Filtrar números > 10</h2>
+    <form id="formFilterNums" onsubmit="return false;">
+      <input type="number" id="numInput" placeholder="Ingresa un número" />
+      <button type="button" onclick="addNum()">Agregar Número</button>
+      <button type="button" onclick="filterNums()">Filtrar > 10</button>
+      <br><br>
+      <label for="numsList">Números:</label><br>
+      <textarea id="numsList" rows="3" readonly></textarea>
+    </form>
+  </div>
+
+  <!-- 2. Palabras > 5 letras -->
+  <div class="grid">
+    <h2>Filtrar palabras > 5 letras</h2>
+    <form id="formFilterWords" onsubmit="return false;">
+      <input type="text" id="wordInput" placeholder="Ingresa una palabra" />
+      <button type="button" onclick="addWord()">Agregar Palabra</button>
+      <button type="button" onclick="filterWords()">Filtrar > 5 letras</button>
+      <br><br>
+      <label for="wordsList">Palabras:</label><br>
+      <textarea id="wordsList" rows="3" readonly></textarea>
+    </form>
+  </div>
+
+  <!-- 3. Usuarios activos -->
+  <div class="grid">
+    <h2>Filtrar usuarios activos</h2>
+    <form id="formFilterUsers" onsubmit="return false;">
+      <input type="text" id="userName" placeholder="Nombre de usuario" />
+      <label>
+        <input type="checkbox" id="userActive" /> Activo
+      </label>
+      <button type="button" onclick="addUser()">Agregar Usuario</button>
+      <button type="button" onclick="filterUsers()">Filtrar activos</button>
+      <br><br>
+      <label for="usersList">Usuarios:</label><br>
+      <textarea id="usersList" rows="3" readonly></textarea>
+    </form>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

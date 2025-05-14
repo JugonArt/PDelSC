@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 1. Saludo nombres -->
+    <div class="grid">
+      <h2>Saludo a nombres</h2>
+      <form id="formNames" onsubmit="return false;">
+        <input type="text" id="nameInput" placeholder="Ingresa un nombre" />
+        <button type="button" onclick="addName()">Agregar Nombre</button>
+        <button type="button" onclick="greetNames()">Saludar Nombres</button>
+        <br><br>
+        <label for="namesList">Nombres:</label><br>
+        <textarea id="namesList" rows="3" readonly></textarea>
+      </form>
+    </div>
+
+    <!-- 2. Doble números -->
+    <div class="grid">
+      <h2>Doble de números</h2>
+      <form id="formNumbers" onsubmit="return false;">
+        <input type="number" id="numberInput" placeholder="Ingresa un número" />
+        <button type="button" onclick="addNumber()">Agregar Número</button>
+        <button type="button" onclick="doubleNumbers()">Mostrar Doble</button>
+        <br><br>
+        <label for="numbersList">Números:</label><br>
+        <textarea id="numbersList" rows="3" readonly></textarea>
+      </form>
+    </div>
+
+    <!-- 3. Personas nombre y edad -->
+    <div class="grid">
+      <h2>Listado de personas</h2>
+      <form id="formPersons" onsubmit="return false;">
+        <input type="text" id="personName" placeholder="Nombre" />
+        <input type="number" id="personAge" placeholder="Edad" />
+        <button type="button" onclick="addPerson()">Agregar Persona</button>
+        <button type="button" onclick="showPersons()">Mostrar Personas</button>
+        <br><br>
+        <label for="personsList">Personas:</label><br>
+        <textarea id="personsList" rows="3" readonly></textarea>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

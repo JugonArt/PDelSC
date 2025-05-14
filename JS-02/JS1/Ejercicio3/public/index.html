@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <h2>Agregar colores</h2>
+      <form id="formularioColores" onsubmit="return false;">
+        <label for="colorSelect">Selecciona un color:</label>
+        <select id="colorSelect">
+          <option value="">Selecciona un color</option>
+          <option value="Rojo">Rojo</option>
+          <option value="Verde">Verde</option>
+          <option value="Azul">Azul</option>
+        </select><br><br>
+        <button type="button" onclick="agregarColor()">Agregar</button>
+        <br><br>
+        <label for="listaColores">Colores agregados:</label><br>
+        <textarea id="listaColores" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+
+    <div class="grid">
+      <h2>Agregar tareas</h2>
+      <form id="formularioTareas" onsubmit="return false;">
+        <label for="tareaInput">Tarea urgente:</label>
+        <input type="text" id="tareaInput" placeholder="Escribe una tarea"><br><br>
+        <button type="button" onclick="agregarTarea()">Agregar</button>
+        <br><br>
+        <label for="listaTareas">Tareas agregadas:</label><br>
+        <textarea id="listaTareas" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+
+    <div class="grid">
+      <h2>Agregar usuarios</h2>
+      <form id="formularioUsuarios" onsubmit="return false;">
+        <label for="usuarioInput">Usuario conectado:</label>
+        <input type="text" id="usuarioInput" placeholder="Nombre de usuario"><br><br>
+        <button type="button" onclick="agregarUsuario()">Agregar</button>
+        <br><br>
+        <label for="listaUsuarios">Usuarios conectados:</label><br>
+        <textarea id="listaUsuarios" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

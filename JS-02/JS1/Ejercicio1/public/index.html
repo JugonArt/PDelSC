@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="grid">
+    <h2>Lista de Frutas</h2>
+
+    <!-- Formulario para mostrar el arreglo -->
+    <form id="formularioFrutas" onsubmit="return false;">
+        <input type="text" id="nuevaFruta" placeholder="Escribe una fruta" />
+        <button type="button" onclick="agregarFruta()">Agregar Frutas</button>
+        <br><br>
+        <label for="frutas">Frutas agregadas:</label><br>
+        <textarea id="frutas" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+    <div class="grid">
+        <h2>Lista de Amigos</h2>
+      <!-- Formulario para mostrar el arreglo -->
+      <form id="formularioAmigos" onsubmit="return false;">
+          <input type="text" id="nuevoAmigo" placeholder="Nombre de un amigo" />
+          <button type="button" onclick="agregarAmigo()">Agregar Amigos</button>
+          <br><br>
+          <label for="amigos">Amigos agregados:</label><br>
+          <textarea id="amigos" rows="4" cols="50" readonly></textarea>
+        </form>
+    </div>
+    <div class="grid">
+        <h2>Lista de Números</h2>
+        <form id="formularioNumeros" onsubmit="return false;">
+          <input type="number" id="nuevoNumero" placeholder="Escribe un número" />
+          <button type="button" onclick="agregarNumero()">Agregar Número</button>
+          <br><br>
+          <label for="numeros">Números agregados:</label><br>
+          <textarea id="numeros" rows="4" cols="50" readonly></textarea>
+        </form>
+      </div>
+      
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

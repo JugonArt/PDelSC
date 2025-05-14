@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="grid">
+    <h2>Array de Letras</h2>
+
+    <!-- Formulario para letras con eliminación usando splice -->
+    <form id="formularioLetras" onsubmit="return false;">
+        <input type="text" id="nuevaLetra" maxlength="1"  placeholder="Escribe una letra" />
+        <button type="button" onclick="agregarLetra()">Agregar Letra</button>
+        <button type="button" class="eliminar" onclick="eliminarLetras()">Eliminar Elementos</button>
+        <br><br>
+        <label for="letras">Letras agregadas:</label><br>
+        <textarea id="letras" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+    <div class="grid">
+        <h2>Array de Nombres</h2>
+      <!-- Formulario para nombres con inserción en posición 1 usando splice -->
+      <form id="formularioNombres" onsubmit="return false;">
+          <input type="text" id="nuevoNombre" placeholder="Nombre" />
+          <button type="button" onclick="agregarNombre()">Agregar Nombre</button>
+          <br><br>
+          <label for="nombres">Nombres agregados:</label><br>
+          <textarea id="nombres" rows="4" cols="50" readonly></textarea>
+        </form>
+    </div>
+    <div class="grid">
+        <h2>Array de Elementos</h2>
+        <!-- Formulario para reemplazar elementos usando splice -->
+        <form id="formularioElementos" onsubmit="return false;">
+          <input type="text" id="nuevoElemento" placeholder="Escribe un elemento" />
+          <button type="button" onclick="agregarElemento()">Agregar Elemento</button>
+          <br><br>
+          <div id="reemplazoSection" style="display: none;">
+            <label for="posicion">Selecciona posición para reemplazar:</label>
+            <select id="posicion"></select>
+            <input type="text" id="primerReemplazo" placeholder="Primer elemento nuevo" />
+            <input type="text" id="segundoReemplazo" placeholder="Segundo elemento nuevo" />
+            <button type="button" onclick="reemplazarElementos()">Reemplazar Elementos</button>
+          </div>
+          <br>
+          <label for="elementos">Elementos agregados:</label><br>
+          <textarea id="elementos" rows="4" cols="50" readonly></textarea>
+        </form>
+      </div>
+      
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

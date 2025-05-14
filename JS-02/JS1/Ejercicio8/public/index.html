@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 1. Comprueba "admin" -->
+    <div class="grid">
+        <h2>Comprueba "admin"</h2>
+        <form id="formAdmin" onsubmit="return false;">
+          <input type="text" id="nuevoRol" placeholder="Ingresa un rol" />
+          <button type="button" onclick="agregarRol()">Agregar Rol</button>
+          <button type="button" onclick="compruebaAdmin()">Comprueba admin</button>
+          <br><br>
+          <label for="roles">Roles:</label><br>
+          <textarea id="roles" rows="3" readonly></textarea>
+        </form>
+      </div>
+  
+      <!-- 2. Colores: verifica "verde" -->
+      <div class="grid">
+        <h2>Colores (verifica "verde")</h2>
+        <form id="formColores" onsubmit="return false;">
+          <select id="selectColores" multiple>
+            <option value="Rojo">Rojo</option>
+            <option value="Azul">Azul</option>
+            <option value="Verde">Verde</option>
+            <option value="Amarillo">Amarillo</option>
+            <option value="Morado">Morado</option>
+          </select>
+          <button type="button" onclick="agregarColores()">Agregar Colores</button>
+          <button type="button" onclick="compruebaVerde()">Comprueba verde</button>
+          <br><br>
+          <label for="colores">Colores:</label><br>
+          <textarea id="colores" rows="3" readonly></textarea>
+        </form>
+      </div>
+  
+      <!-- 3. Números con verificación -->
+      <div class="grid">
+        <h2>Verifica antes de añadir número</h2>
+        <form id="formNumerosVerif" onsubmit="return false;">
+          <input type="number" id="nuevoNumeroVerif" placeholder="Ingresa un número" />
+          <button type="button" onclick="agregarNumeroVerif()">Agregar número</button>
+          <br><br>
+          <label for="numerosVerif">Números:</label><br>
+          <textarea id="numerosVerif" rows="3" readonly></textarea>
+        </form>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

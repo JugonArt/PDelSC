@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+   <!-- 1. Ordenar números -->
+   <div class="grid">
+    <h2>Ordenar números (menor a mayor)</h2>
+    <form id="formSortNums" onsubmit="return false;">
+      <input type="number" id="numSortInput" placeholder="Ingresa un número" />
+      <button type="button" onclick="addNumSort()">Agregar Número</button>
+      <button type="button" onclick="sortNums()">Ordenar Números</button>
+      <br><br>
+      <label for="numsSortList">Números:</label><br>
+      <textarea id="numsSortList" rows="3" readonly></textarea>
+    </form>
+  </div>
+
+  <!-- 2. Ordenar palabras -->
+  <div class="grid">
+    <h2>Ordenar palabras alfabéticamente</h2>
+    <form id="formSortWords" onsubmit="return false;">
+      <input type="text" id="wordSortInput" placeholder="Ingresa una palabra" />
+      <button type="button" onclick="addWordSort()">Agregar Palabra</button>
+      <button type="button" onclick="sortWords()">Ordenar Palabras</button>
+      <br><br>
+      <label for="wordsSortList">Palabras:</label><br>
+      <textarea id="wordsSortList" rows="3" readonly></textarea>
+    </form>
+  </div>
+
+  <!-- 3. Ordenar objetos por edad -->
+  <div class="grid">
+    <h2>Ordenar usuarios por edad</h2>
+    <form id="formSortUsers" onsubmit="return false;">
+      <input type="text" id="userNameSort" placeholder="Nombre" />
+      <input type="number" id="userAgeSort" placeholder="Edad" />
+      <button type="button" onclick="addUserSort()">Agregar Usuario</button>
+      <button type="button" onclick="sortUsers()">Ordenar Usuarios</button>
+      <br><br>
+      <label for="usersSortList">Usuarios:</label><br>
+      <textarea id="usersSortList" rows="3" readonly></textarea>
+    </form>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

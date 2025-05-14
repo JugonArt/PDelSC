@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 4. Encuentra "perro" -->
+    <div class="grid">
+      <h2>Encuentra "perro"</h2>
+      <form id="formPalabras" onsubmit="return false;">
+        <input type="text" id="nuevaPalabra" placeholder="Ingresa palabra" />
+        <button type="button" onclick="agregarPalabra()">Agregar Palabra</button>
+        <button type="button" onclick="buscarPerro()">Busca perro</button>
+        <br><br>
+        <label for="palabras">Palabras:</label><br>
+        <textarea id="palabras" rows="3" readonly></textarea>
+      </form>
+    </div>
+
+    <!-- 5. Verifica si el número 50 está -->
+    <div class="grid">
+      <h2>Verifica número 50</h2>
+      <form id="formNumeros" onsubmit="return false;">
+        <input type="number" id="nuevoNumero" placeholder="Ingresa un número" />
+        <button type="button" onclick="agregarNumero()">Agregar Número</button>
+        <button type="button" onclick="buscar50()">Busca 50</button>
+        <br><br>
+        <label for="numeros">Números:</label><br>
+        <textarea id="numeros" rows="3" readonly></textarea>
+      </form>
+    </div>
+
+    <!-- 6. Ciudades con select -->
+    <div class="grid">
+      <h2>Ciudades Select</h2>
+      <form id="formSelectCiudades" onsubmit="return false;">
+        <select id="selectCiudades" multiple>
+          <option value="Madrid">Madrid</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Valencia">Valencia</option>
+          <option value="Sevilla">Sevilla</option>
+        </select>
+        <button type="button" onclick="agregarSelectCiudad()">Agregar Seleccionadas</button>
+        <button type="button" onclick="buscarMadrid()">Busca Madrid</button>
+        <br><br>
+        <label for="ciudadesSelectAgregadas">Ciudades Agregadas:</label><br>
+        <textarea id="ciudadesSelectAgregadas" rows="3" readonly></textarea>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

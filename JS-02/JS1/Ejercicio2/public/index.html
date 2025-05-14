@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+        <h2>Lista de Animales</h2>
+    
+        <!-- Formulario para mostrar el arreglo -->
+        <form id="FormularioAnimales" onsubmit="return false;">
+          <input type="text" class="input" id="nuevoAnimal" placeholder="Escribe un animal" />
+          <div class="botones">
+          <button type="button" onclick="agregarAnimal()">Agregar Animal</button>
+            <button type="button" class="eliminar" onclick="quitaAnimal()">Eliminar animal</button>
+          </div>
+            <br><br>
+            <label for="animales">Animales:</label><br>
+            <textarea id="animales" rows="4" cols="50" readonly></textarea>
+          </form>
+        </div>
+        <div class="grid">
+          <h2>Lista de Compra</h2>
+      
+          <!-- Formulario para mostrar el arreglo -->
+          <form id="FormularioProducto" onsubmit="return false;">
+            <input type="text" class="input" id="nuevoProducto" placeholder="Escribe un producto" />
+            <div class="botones">
+            <button type="button" onclick="agregarProducto()">Agregar producto</button>
+              <button type="button" class="eliminar" onclick="quitaProducto()">Eliminar producto</button>
+            </div>
+              <br><br>
+              <label for="productos">Productos:</label><br>
+              <textarea id="productos" rows="4" cols="50" readonly></textarea>
+            </form>
+          </div>
+          <div class="grid">
+            <h2>Lista de Cosas</h2>
+        
+            <!-- Formulario para mostrar el arreglo -->
+            <form id="FormularioCosa" onsubmit="return false;">
+              <input type="text" class="input" id="nuevaCosa" placeholder="Escribe una cosa" />
+              <div class="botones">
+              <button type="button" onclick="agregarCosa()">Agregar cosa</button>
+                <button type="button" class="eliminar" onclick="eliminarTodasLasCosas()">Eliminar cosas</button>
+              </div>
+                <br><br>
+                <label for="cosas">Cosas:</label><br>
+                <textarea id="cosas" rows="4" cols="50" readonly></textarea>
+              </form>
+            </div>
+        <script src="script.js"></script>
+</body>
+</html>

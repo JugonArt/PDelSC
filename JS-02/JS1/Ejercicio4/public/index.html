@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Lista de Perros -->
+    <div class="grid">
+      <h2>Lista de Perros</h2>
+      <form id="formularioPerros" onsubmit="return false;">
+        <input type="text" id="nuevoPerro" placeholder="Nombre de un perro" />
+        <button type="button" onclick="agregarPerro()">Agregar Perro</button>
+        <button type="button" onclick="eliminarPrimerPerro()">Eliminar Primer Perro</button>
+        <br><br>
+        <label for="perros">Perros agregados:</label><br>
+        <textarea id="perros" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+
+    <!-- Lista de Mensajes de Chat -->
+    <div class="grid">
+      <h2>Lista de Mensajes de Chat</h2>
+      <form id="formularioChat" onsubmit="return false;">
+        <input type="text" id="nuevoMensaje" placeholder="Escribe un mensaje" />
+        <button type="button" onclick="agregarMensaje()">Agregar Mensaje</button>
+        <button type="button" onclick="eliminarPrimerMensaje()">Eliminar Primer Mensaje</button>
+        <br><br>
+        <label for="chat">Mensajes de Chat:</label><br>
+        <textarea id="chat" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+
+    <!-- Cola de Atención al Cliente -->
+    <div class="grid">
+      <h2>Cola de Atención al Cliente</h2>
+      <form id="formularioCola" onsubmit="return false;">
+        <input type="text" id="nuevoCliente" placeholder="Nombre del cliente" />
+        <button type="button" onclick="agregarCliente()">Agregar Cliente</button>
+        <button type="button" onclick="atenderCliente()">Atender Cliente</button>
+        <br><br>
+        <label for="cola">Clientes en espera:</label><br>
+        <textarea id="cola" rows="4" cols="50" readonly></textarea>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+<!-- 1. Suma elementos -->
+<div class="grid">
+    <h2>Suma de elementos</h2>
+    <form id="formSum" onsubmit="return false;">
+      <input type="number" id="numSumInput" placeholder="Ingresa un número" />
+      <button type="button" onclick="addNumSum()">Agregar Número</button>
+      <button type="button" onclick="calcSum()">Calcular Suma</button>
+      <br><br>
+      <label for="numsSumList">Números:</label><br>
+      <textarea id="numsSumList" rows="3" readonly></textarea><br>
+      <label for="sumResult">Resultado Suma:</label><br>
+      <textarea id="sumResult" rows="1" readonly></textarea>
+    </form>
+  </div>
+
+  <!-- 2. Multiplicación elementos -->
+  <div class="grid">
+    <h2>Multiplicación de elementos</h2>
+    <form id="formMul" onsubmit="return false;">
+      <input type="number" id="numMulInput" placeholder="Ingresa un número" />
+      <button type="button" onclick="addNumMul()">Agregar Número</button>
+      <button type="button" onclick="calcMul()">Calcular Producto</button>
+      <br><br>
+      <label for="numsMulList">Números:</label><br>
+      <textarea id="numsMulList" rows="3" readonly></textarea><br>
+      <label for="mulResult">Resultado Multiplicación:</label><br>
+      <textarea id="mulResult" rows="1" readonly></textarea>
+    </form>
+  </div>
+
+  <!-- 3. Total precios objetos -->
+  <div class="grid">
+    <h2>Total de precios</h2>
+    <form id="formPrices" onsubmit="return false;">
+      <input type="number" id="priceInput" placeholder="Ingresa precio" step="any" />
+      <button type="button" onclick="addPrice()">Agregar Precio</button>
+      <button type="button" onclick="calcTotalPrice()">Calcular Total</button>
+      <br><br>
+      <label for="pricesList">Precios:</label><br>
+      <textarea id="pricesList" rows="3" readonly></textarea><br>
+      <label for="priceTotalResult">Resultado Total:</label><br>
+      <textarea id="priceTotalResult" rows="1" readonly></textarea>
+    </form>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
